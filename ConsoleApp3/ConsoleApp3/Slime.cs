@@ -1,16 +1,9 @@
 namespace ConsoleApp3;
 
-public class Slime
+public class Slime : Monster
 {
-    public string Name;
-    public int HP;
-
-    public void TakeDamage(int damage)
-    {
-    }
-
     public void Attack()
     {
-        
+        Console.WriteLine($"{Name} 이(가) 몸을 부딪칩니다.");
     }
 }

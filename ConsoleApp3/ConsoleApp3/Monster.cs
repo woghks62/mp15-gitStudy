@@ -3,15 +3,17 @@ namespace ConsoleApp3;
 public class Monster
 {
     public string Name;
-    public int HP { get; set; }
+    public int Hp;
 
     public void TakeDamage(int damage)
     {
-        HP -= damage;
+        Hp -= damage;
 
-        if (HP <= 0)
+        if (Hp <= 0)
         {
-            HP = 0;
+            Hp = 0;
         }
+        
+        Console.WriteLine(Name + " 남은 체력 " + Hp);  
     }
 }
